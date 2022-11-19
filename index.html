@@ -32,6 +32,18 @@
         header .updated {
             font-size: .8rem;
         }
+        header .download {
+            margin-top: 10px;
+        }
+        header .download a {
+            background-color: #000;
+            border-radius: 15px;
+            color: #fff;
+            font-size: .8em;
+            font-weight: 700;
+            padding: 5px;
+            text-decoration: none;
+        }
         .briefly {
             margin-top: 30px;
         }
@@ -58,6 +70,18 @@
         .job > :last-child {
             flex: 1 0 75%;
         }
+        .job .title {
+            font-weight: 700;
+        }
+        .job .heading {
+            font-weight: 500;
+        }
+        .pets {
+            margin-top: 30px;
+        }
+        .skills {
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
@@ -66,10 +90,15 @@
             <span class="a">Dmitry Mikhalkov</span>
             &ndash;
             <span>contact</span>
-            <a href="/biz-card" target="_blank">@trainymonked</a>
+            <a href="https://trainymonked.github.io/me" target="_blank">@trainymonked</a>
             <span>everywhere</span>
         </div>
-        <div class="updated">Last updated: Nov 15, 2022</div>
+        <div>
+            <div class="updated">Last updated: Nov 19, 2022</div>
+            <div class="download">
+                <a href="Dmitry Mikhalkov.pdf" download="Dmitry Mikhalkov.pdf">Save as PDF</a>
+            </div>
+        </div>
     </header>
     <div class="briefly">
         <p class="title">Frontend Developer <span class="type">&ndash; 2 years of experience</span></p>
@@ -85,10 +114,10 @@
         </div>
         <div>
             <div class="title">Military Service</div>
-            <div class="client">Conscription</div>
+            <div class="client">🪖 Conscription</div>
             <div class="description">You'll probably ask why I didn't work for a whole year</div>
             <div class="responsibilities">
-                <b>Responsibilities:</b>
+                <p class="heading">Responsibilities:</p>
                 <p>- do this</p>
                 <p>- don't do that</p>
             </div>
@@ -97,34 +126,37 @@
 
     <div class="job">
         <div class="timeline">
-            Jul 2021 - Oct 2021
-            <br>4 mos
+            Apr 2021 - Oct 2021
+            <br>7 mos
         </div>
         <div>
             <div class="title">React Developer</div>
-            <div class="client">IBA Gomel</div>
-            <div class="description"></div>
+            <div class="client">🏢 IBA Gomel</div>
+            <div class="description">Full-time employment</div>
             <div class="responsibilities">
-                <b>Responsibilities:</b>
-                <p>- do this</p>
-                <p>- do that</p>
+                <p class="heading">Responsibilities:</p>
+                <p>- Frontend developing with React.js and Redux (internal Web IDE for some projects)</p>
+                <p>- Investigating and fixing bugs</p>
+                <p>- Enhancing code readability and reducing code smells</p>
+                <p>- Extending business logic using JavaScript</p>
             </div>
         </div>
     </div>
 
     <div class="job">
         <div class="timeline">
-            Jan 2020 - Jun 2021
-            <br>1 yr 6 mos
+            Jan 2020 - Mar 2021
+            <br>1 yr 3 mos
         </div>
         <div>
             <div class="title">Frontend Trainee</div>
-            <div class="client">IBA Gomel</div>
-            <div class="description">Professional development ... coaches ...</div>
+            <div class="client">🏢 IBA Gomel</div>
+            <div class="description">Professional training on internal projects by mentors - employees of the company</div>
             <div class="responsibilities">
-                <b>Responsibilities:</b>
-                <p>- do this</p>
-                <p>- do that</p>
+                <p class="heading">Goals Achieved:</p>
+                <p>- To learn fundamentals of React.js, Redux, TypeScript, Unit-testing, Angular, Node.js</p>
+                <p>- To learn advanced logic of Git, JavaScript (ECMAScript 5+)</p>
+                <p>- Built some frontend projects based on SRS</p>
             </div>
         </div>
     </div>
@@ -136,14 +168,20 @@
         </div>
         <div>
             <div class="title">C# .NET Trainee</div>
-            <div class="client">EPAM Systems</div>
+            <div class="client">🏢 EPAM Systems</div>
             <div class="description">Internship</div>
             <div class="responsibilities">
-                <b>Responsibilities:</b>
-                <p>- do this</p>
-                <p>- do that</p>
+                <p class="heading">Goals Achieved:</p>
+                <p>- Realized that JavaScript is everywhere</p>
+                <p>- Built a simple MVC project based on SRS</p>
             </div>
         </div>
+    </div>
+
+    <div class="pets">
+        <h3>Check some of my pet projects on GitHub - 
+            <a href="https://trainymonked.github.io" target="_blank" rel="noopener noreferrer">trainymonked.github.io</a>
+        </h3>
     </div>
 
     <div class="skills">
@@ -158,8 +196,6 @@
         <p>- HTML from design mock-ups</p>
         <p>- Angular, TypeScript, TinyMCE</p>
         <p>- OOP, MVC, REST API</p>
-        <p>- </p>
-        <p>- </p>
     </div>
 </body>
 </html>
