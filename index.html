@@ -21,6 +21,8 @@
         }
         header {
             display: flex;
+            gap: 5px;
+            align-items: baseline;
             justify-content: space-between;
         }
         header .name .a {
@@ -39,13 +41,10 @@
             background-color: #000;
             border-radius: 15px;
             color: #fff;
-            font-size: .8em;
+            font-size: .8rem;
             font-weight: 700;
-            padding: 5px;
+            padding: 5px 15px;
             text-decoration: none;
-        }
-        .briefly {
-            margin-top: 30px;
         }
         .briefly p {
             font-size: .8rem;
@@ -64,8 +63,8 @@
             gap: 30px;
             justify-content: start;
         }
-        .job > :first-child {
-            flex: 1 0 20%;
+        .job .timeline {
+            flex: 1 0 25%;
         }
         .job > :last-child {
             flex: 1 0 75%;
@@ -82,6 +81,62 @@
         .skills {
             margin-top: 30px;
         }
+        @media (max-width: 768px) {
+            html {
+                font-size: medium;
+                padding: 25px;
+            }
+            header .download {
+                margin-top: 5px;
+            }
+            .job {
+                gap: 5px;
+            }
+            .job .timeline {
+                flex: 1 0 30%;
+            }
+            .job > :last-child {
+                flex: 1 0 70%;
+            }
+        }
+        @media (max-width: 600px) {
+            html {
+                font-size: small;
+                padding: 20px;
+            }
+            header .download a {
+                border-radius: 10px;
+                padding: 3px 8px;
+            }
+            .job {
+                margin-top: 15px;
+            }
+            .pets {
+                margin-top: 15px;
+            }
+            .skills {
+                margin-top: 15px;
+            }
+        }
+        @media (max-width: 480px) {
+            html {
+                font-size: x-small;
+            }
+        }
+        @media (max-width: 320px) {
+            html {
+                font-size: xx-small;
+                padding: 10px;
+            }
+        }
+        @media print {
+            .briefly {
+                margin-top: 30px;
+            }
+            .download {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -94,7 +149,7 @@
             <span>everywhere</span>
         </div>
         <div>
-            <div class="updated">Last updated: Nov 19, 2022</div>
+            <div class="updated">Last updated: Nov 21, 2022</div>
             <div class="download">
                 <a href="Dmitry Mikhalkov.pdf" download="Dmitry Mikhalkov.pdf">Save as PDF</a>
             </div>
@@ -154,8 +209,8 @@
             <div class="description">Professional training on internal projects by mentors - employees of the company</div>
             <div class="responsibilities">
                 <p class="heading">Goals Achieved:</p>
-                <p>- To learn fundamentals of React.js, Redux, TypeScript, Unit-testing, Angular, Node.js</p>
-                <p>- To learn advanced logic of Git, JavaScript (ECMAScript 5+)</p>
+                <p>- Learned fundamentals of React.js, Redux, TypeScript, Unit-testing, Angular, Node.js</p>
+                <p>- Learned advanced logic of Git, JavaScript (ECMAScript 5+)</p>
                 <p>- Built some frontend projects based on SRS</p>
             </div>
         </div>
@@ -179,9 +234,9 @@
     </div>
 
     <div class="pets">
-        <h3>Check some of my pet projects on GitHub - 
+        <h4>Check some of my pet projects on GitHub -
             <a href="https://trainymonked.github.io" target="_blank" rel="noopener noreferrer">trainymonked.github.io</a>
-        </h3>
+        </h4>
     </div>
 
     <div class="skills">
@@ -189,12 +244,12 @@
         <p>- HTML5, CSS3, JavaScript</p>
         <p>- Knowledge of ES5+</p>
         <p>- React, Redux</p>
-        <p>- Node.js, Express.js, MongoDB, JWT, bcrypt</p>
-        <p>- JEST, Karma, Jasmine</p>
+        <p>- Node.js, Express.js, MongoDB, JWT, bcrypt.js</p>
+        <!-- <p>- JEST, Karma, Jasmine</p> -->
         <p>- Git, GitHub, GitLab, Gerrit</p>
         <p>- Responsive websites</p>
         <p>- HTML from design mock-ups</p>
-        <p>- Angular, TypeScript, TinyMCE</p>
+        <!-- <p>- Angular, TypeScript, TinyMCE</p> -->
         <p>- OOP, MVC, REST API</p>
     </div>
 </body>
