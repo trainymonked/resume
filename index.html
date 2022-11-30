@@ -1,261 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dmitry Mikhalkov</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            border: none;
-        }
-        a {
-            color: inherit;
-        }
-        html {
-            font-size: large;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            padding: 50px;
-        }
-        header {
-            display: flex;
-            gap: 5px;
-            align-items: baseline;
-            justify-content: space-between;
-        }
-        header .name .a {
-            font-weight: 700;
-        }
-        header .name :not(.a) {
-            font-size: .8rem;
-        }
-        header .updated {
-            font-size: .8rem;
-        }
-        header .download {
-            margin-top: 10px;
-        }
-        header .download a {
-            background-color: #000;
-            border-radius: 15px;
-            color: #fff;
-            font-size: .8rem;
-            font-weight: 700;
-            padding: 5px 15px;
-            text-decoration: none;
-        }
-        .briefly p {
-            font-size: .8rem;
-            margin: 5px 0 0;
-        }
-        .briefly p.title {
-            font-size: 1rem;
-            font-weight: 500;
-        }
-        .briefly span.type {
-            font-weight: 400;
-        }
-        .job {
-            margin-top: 30px;
-            display: flex;
-            gap: 30px;
-            justify-content: start;
-        }
-        .job .timeline {
-            flex: 1 0 25%;
-        }
-        .job > :last-child {
-            flex: 1 0 75%;
-        }
-        .job .title {
-            font-weight: 700;
-        }
-        .job .heading {
-            font-weight: 500;
-        }
-        .pets {
-            margin-top: 30px;
-        }
-        .skills {
-            margin-top: 30px;
-        }
-        @media (max-width: 768px) {
-            html {
-                font-size: medium;
-                padding: 25px;
-            }
-            header .download {
-                margin-top: 5px;
-            }
-            .job {
-                gap: 5px;
-            }
-            .job .timeline {
-                flex: 1 0 30%;
-            }
-            .job > :last-child {
-                flex: 1 0 70%;
-            }
-        }
-        @media (max-width: 600px) {
-            html {
-                font-size: small;
-                padding: 20px;
-            }
-            header .download a {
-                border-radius: 10px;
-                padding: 3px 8px;
-            }
-            .job {
-                margin-top: 15px;
-            }
-            .pets {
-                margin-top: 15px;
-            }
-            .skills {
-                margin-top: 15px;
-            }
-        }
-        @media (max-width: 480px) {
-            html {
-                font-size: x-small;
-            }
-        }
-        @media (max-width: 370px) {
-            html {
-                font-size: xx-small;
-                padding: 15px;
-            }
-        }
-        @media (max-width: 325px) {
-            html {
-                padding: 10px;
-            }
-        }
-        @media print {
-            .briefly {
-                margin-top: 30px;
-            }
-            .download {
-                display: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <div class="name">
-            <span class="a">Dmitry Mikhalkov</span>
+            <span>Dmitry Mikhalkov</span>
             &ndash;
-            <span>contact</span>
+            <span>contact
             <a href="https://trainymonked.github.io/me" target="_blank">@trainymonked</a>
-            <span>everywhere</span>
+            everywhere</span>
         </div>
         <div>
-            <div class="updated">Last updated: Nov 21, 2022</div>
+            <div class="updated">Last updated: Nov 30, 2022</div>
             <div class="download">
                 <a href="Dmitry Mikhalkov.pdf" download="Dmitry Mikhalkov.pdf">Save as PDF</a>
             </div>
         </div>
     </header>
-    <div class="briefly">
+
+    <section class="briefly">
         <p class="title">Frontend Developer <span class="type">&ndash; 2 years of experience</span></p>
         <p>22 years old, Bachelor of Engineering</p>
         <p>Gomel, Belarus | Ready for relocation</p>
-        <p>Fast-learning and self-motivated</p>
-    </div>
+    </section>
 
-    <div class="job">
-        <div class="timeline">
-            Nov 2021 - Oct 2022
-            <br>1 yr
-        </div>
-        <div>
-            <div class="title">Military Service</div>
-            <div class="client">🪖 Conscription</div>
-            <div class="description">You'll probably ask why I didn't work for a whole year</div>
-            <div class="responsibilities">
-                <p class="heading">Responsibilities:</p>
-                <p>- do this</p>
-                <p>- don't do that</p>
+    <section class="mil">
+        <details class="mil__details">
+            <summary>Military Service</summary>
+            <div class="project">
+                <div class="timeline">
+                    Nov 2021 - Nov 3, 2022
+                    <br>1 year
+                </div>
+                <div>
+                    <div class="title">Military Service</div>
+                    <div class="client">🪖 Conscription</div>
+                    <div class="description">You'll probably ask why I didn't work for a whole year</div>
+                    <div class="responsibilities">
+                        <p class="project__heading">Responsibilities:</p>
+                        <p>- do this</p>
+                        <p>- don't do that</p>
+                    </div>
+                </div>
+            </div>
+        </details>
+    </section>
+
+    <section class="mil__print">
+        <div class="project">
+            <div class="timeline">
+                Nov 2021 - Nov 3, 2022
+                <br>1 year
+            </div>
+            <div>
+                <div class="title">Military Service</div>
+                <div class="client">🪖 Conscription</div>
+                <div class="description">You'll probably ask why I didn't work for a whole year</div>
+                <div class="responsibilities">
+                    <p class="project__heading">Responsibilities:</p>
+                    <p>- do this</p>
+                    <p>- don't do that</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="job">
+    <p class="heading">Latest Projects:</p>
+
+    <section class="project">
         <div class="timeline">
-            Apr 2021 - Oct 2021
-            <br>7 mos
+            July 2021 - Oct 2021
+            <br>4 months
         </div>
         <div>
-            <div class="title">React Developer</div>
-            <div class="client">🏢 IBA Gomel</div>
-            <div class="description">Full-time employment</div>
+            <div class="title">Frontend React Developer</div>
+            <div class="client">🏢 IBA feat. TAMM</div>
+            <div class="description">Full-time employment. English only. <br>The client had a government website full of services for Abu Dhabi. Every business or individual user can i.e. issue or modify a license using an easy to use UI in just about 6 minutes instead of going to the office and waiting in line, etc.</div>
             <div class="responsibilities">
-                <p class="heading">Responsibilities:</p>
-                <p>- Frontend developing with React.js and Redux (internal Web IDE for some projects)</p>
+                <p class="project__heading">Responsibilities:</p>
+                <p>- Frontend developing with React.js and Redux (using internal IDE - Workbench)</p>
+                <p>- Extending business logic</p>
+                <p>- Investigating and fixing bugs</p>
+                <p>- Daily Scrum meetings in English</p>
+                <p class="project__heading">Tech Stack:</p>
+                <p>Workbench IDE (based on React.js), TypeScript, React.js, Redux, Git (GitLab), Jira, Confluence.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project">
+        <div class="timeline">
+            Apr 2021 - Jun 2021
+            <br>3 months
+        </div>
+        <div>
+            <div class="title">Frontend React Developer</div>
+            <div class="client">🏢 IBA feat. Visual Flow</div>
+            <div class="description">Part-time employment. At first - internal project. <br>Visual Flow is a low code ETL solution designed for effective data manipulation via convenient and user-friendly interface. The tool can integrate data from different sources (DB2, COS, Elastic Search), perform data processing and transformation, leverage metadata for analysis and maintenance.</div>
+            <div class="responsibilities">
+                <p class="project__heading">Responsibilities:</p>
+                <p>- Frontend developing with React.js and Redux</p>
+                <p>- Extending business logic</p>
                 <p>- Investigating and fixing bugs</p>
                 <p>- Enhancing code readability and reducing code smells</p>
-                <p>- Extending business logic using JavaScript</p>
+                <p>- Daily Scrum meetings</p>
+                <p class="project__heading">Tech Stack:</p>
+                <p>JavaScript, React.js, Redux, HTML5, CSS3, Git (GitLab, GitHub), Jira, Confluence, Swagger.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="job">
+    <section class="project">
         <div class="timeline">
-            Jan 2020 - Mar 2021
-            <br>1 yr 3 mos
+            Dec 2020 - Apr 2021
+            <br>5 months
         </div>
         <div>
-            <div class="title">Frontend Trainee</div>
-            <div class="client">🏢 IBA Gomel</div>
+            <div class="title">Fullstack (MERN) Developer</div>
+            <div class="client">🎓 University Project - Graduate Work</div>
+            <div class="description">Careers tab for a company website. <br>This project is about careers (vacancies) tab on a company website. There are 2 types of access in this project: read-only access for everyone, and full access for administrators.
+                Everyone can see the list of careers. Administrators can add, edit, and remove careers from the database using admin panel on the website.</div>
+            <div class="responsibilities">
+                <p class="project__heading">Responsibilities:</p>
+                <p>- Application Design</p>
+                <p>- Frontend developing with React.js, Context API, TinyMCE</p>
+                <p>- Backend developing with Node.js, MongoDB, Express.js</p>
+                <p class="project__heading">Tech Stack:</p>
+                <p>JavaScript, React.js, HTML5, CSS3, Node.js, MongoDB, Express.js, JWT, bcrypt.js, TinyMCE.</p>
+            </div>
+        </div>
+    </section>
+
+    <p class="heading">Courses/Trainings:</p>
+
+    <section class="project">
+        <div class="timeline">
+            Dec 2019 - Mar 2021
+            <br>1 year 4 months
+        </div>
+        <div>
+            <div class="title">Frontend/JS Trainee</div>
+            <div class="client">🏢 IBA</div>
             <div class="description">Professional training on internal projects by mentors - employees of the company</div>
             <div class="responsibilities">
-                <p class="heading">Goals Achieved:</p>
+                <p class="project__heading">Goals Achieved:</p>
                 <p>- Learned fundamentals of React.js, Redux, TypeScript, Unit-testing, Angular, Node.js</p>
                 <p>- Learned advanced logic of Git, JavaScript (ECMAScript 5+)</p>
                 <p>- Built some frontend projects based on SRS</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="job">
+    <section class="project">
         <div class="timeline">
             Apr 2019 - Aug 2019
-            <br>5 mos
+            <br>5 months
         </div>
         <div>
             <div class="title">C# .NET Trainee</div>
             <div class="client">🏢 EPAM Systems</div>
             <div class="description">Internship</div>
             <div class="responsibilities">
-                <p class="heading">Goals Achieved:</p>
-                <p>- Realized that JavaScript is everywhere</p>
+                <p class="project__heading">Goals Achieved:</p>
                 <p>- Built a simple MVC project based on SRS</p>
+                <p>- Realized that JavaScript is everywhere, and I need to know it</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="pets">
-        <h4>Check some of my pet projects on GitHub -
-            <a href="https://trainymonked.github.io" target="_blank" rel="noopener noreferrer">trainymonked.github.io</a>
-        </h4>
-    </div>
+    <section class="pets">
+        <p>Check some of my pet projects on GitHub -
+            <a href="https://trainymonked.github.io" target="_blank"
+                rel="noopener noreferrer">trainymonked.github.io</a>
+        </p>
+    </section>
 
-    <div class="skills">
+    <section class="skills">
         <b>Professional skills:</b>
-        <p>- HTML5, CSS3, JavaScript</p>
-        <p>- Knowledge of ES5+</p>
-        <p>- React, Redux</p>
+        <p>- HTML5, CSS3, JavaScript (ECMAScript 5 and later)</p>
+        <p>- React.js, Redux</p>
         <p>- Node.js, Express.js, MongoDB, JWT, bcrypt.js</p>
         <!-- <p>- JEST, Karma, Jasmine</p> -->
-        <p>- Git, GitHub, GitLab, Gerrit</p>
-        <p>- Responsive websites</p>
-        <p>- HTML from design mock-ups</p>
+        <p>- Git, GitHub, GitLab, Gerrit, Jira</p>
+        <!-- <p>- Adaptive websites from design mock-ups</p> -->
         <!-- <p>- Angular, TypeScript, TinyMCE</p> -->
-        <p>- OOP, MVC, REST API</p>
-    </div>
+        <!-- <p>- OOP, MVC, REST API</p> -->
+    </section>
 </body>
+
 </html>
